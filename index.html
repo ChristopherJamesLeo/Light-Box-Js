@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Light Box</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="light-box">
+            <div class="image-container">
+                <img src="./img/image1.jpg" img-data = "0" alt="image 1">
+            </div>
+            <div class="image-container">
+                <img src="./img/image2.jpg" img-data = "1" alt="image 2">
+            </div>
+            <div class="image-container">
+                <img src="./img/image3.jpg" img-data = "2" alt="image 3">
+            </div>
+            <div class="image-container">
+                <img src="./img/image4.jpg" img-data = "3" alt="image 4">
+            </div>
+            <div class="image-container">
+                <img src="./img/image5.jpg" img-data = "4" alt="image 5">
+            </div>
+            <div class="image-container">
+                <img src="./img/image6.jpg" img-data = "5" alt="image 6">
+            </div>
+            
+        </div>
+    </div>
+    <!-- Modal Box Start -->
+    <div id="modal" class="modal">
+        <div id="btn-close" class="btn-close">&times;</div>
+        <div class="modal-content">
+            <div class="show">
+                <img src="./img/image1.jpg" img-data = "1" alt="image 1">
+            </div>
+            <div class="show">
+                <img src="./img/image2.jpg" img-data = "2" alt="image 2">
+            </div>
+            <div class="show">
+                <img src="./img/image3.jpg" img-data = "3" alt="image 3">
+            </div>
+            <div class="show">
+                <img src="./img/image4.jpg" img-data = "4" alt="image 4">
+            </div>
+            <div class="show">
+                <img src="./img/image5.jpg" img-data = "5" alt="image 5">
+            </div>
+            <div class="show">
+                <img src="./img/image6.jpg" img-data = "6" alt="image 6">
+            </div>
+            <div id="prev-btn" class="prev-btn"> < </div>
+            <div id="next-btn" class="next-btn"> > </div>
+            <div class="captions">
+                <div class="indicator">6/6</div>
+            </div>
+            <div class="show-gallery">
+                <div class="col">
+                    <img src="./img/image1.jpg" img-data = "1" onclick="showImg(0)" alt="image 1">
+                </div>
+                <div class="col">
+                    <img src="./img/image2.jpg" img-data = "2" onclick="showImg(1)"  alt="image 2">
+                </div>
+                <div class="col">
+                    <img src="./img/image3.jpg" img-data = "3" onclick="showImg(2)"  alt="image 3">
+                </div>
+                <div class="col">
+                    <img src="./img/image4.jpg" img-data = "4" onclick="showImg(3)"  alt="image 4">
+                </div>
+                <div class="col">
+                    <img src="./img/image5.jpg" img-data = "5" onclick="showImg(4)"  alt="image 5">
+                </div>
+                <div class="col">
+                    <img src="./img/image6.jpg" img-data = "6" onclick="showImg(5)"  alt="image 6">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Model Box End -->
+</body>
+</html>
